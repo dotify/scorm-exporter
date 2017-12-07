@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest identifier="com.TestCompany.TestCourse.56ed0bf1-3d99-4be3-8e60-d005ec4dc6b1" version="1" xmlns:adlnav="http://www.adlnet.org/xsd/adlnav_v1p3" xmlns="http://www.imsglobal.org/xsd/imscp_v1p1" xmlns:adlseq="http://www.adlnet.org/xsd/adlseq_v1p3" xmlns:imsss="http://www.imsglobal.org/xsd/imsss" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd http://www.adlnet.org/xsd/adlseq_v1p3 adlseq_v1p3.xsd http://www.adlnet.org/xsd/adlnav_v1p3 adlnav_v1p3.xsd http://www.imsglobal.org/xsd/imsss imsss_v1p0.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>2004 4th Edition</schemaversion>
+    <adlcp:location>metadata.xml</adlcp:location>
+  </metadata>
+  <organizations default="Test_Company">
+    <organization identifier="Test_Company">
+      <title>Test Course</title>
+
+<!--  Module 1 Menu -->
+      <item identifier="item_00" identifierref="resource_00">
+        <title>Test Course</title>
+        <imsss:sequencing>
+          <imsss:objectives>
+            <imsss:primaryObjective objectiveID="PRIMARYOBJ" satisfiedByMeasure="true">
+              <imsss:minNormalizedMeasure>0.8</imsss:minNormalizedMeasure>
+            </imsss:primaryObjective>
+          </imsss:objectives>
+          <imsss:deliveryControls completionSetByContent="true" objectiveSetByContent="true"/>
+        </imsss:sequencing>
+        <metadata>
+          <schema>ADL SCORM</schema>
+          <schemaversion>2004 4th Edition</schemaversion>
+          <adlcp:location>metadata.xml</adlcp:location>
+        </metadata>
+      </item>
+
+<!-- Module 2 Menu -->
+      <item identifier="item_01" identifierref="resource_01">
+        <title>Test Course II</title>
+        <imsss:sequencing>
+          <imsss:objectives>
+            <imsss:primaryObjective objectiveID="PRIMARYOBJ" satisfiedByMeasure="true">
+              <imsss:minNormalizedMeasure>0.8</imsss:minNormalizedMeasure>
+            </imsss:primaryObjective>
+          </imsss:objectives>
+          <imsss:deliveryControls completionSetByContent="true" objectiveSetByContent="true"/>
+        </imsss:sequencing>
+        <metadata>
+          <schema>ADL SCORM</schema>
+          <schemaversion>2004 4th Edition</schemaversion>
+          <adlcp:location>metadata.xml</adlcp:location>
+        </metadata>
+      </item>
+
+      <metadata>
+        <schema>ADL SCORM</schema>
+        <schemaversion>2004 4th Edition</schemaversion>
+        <adlcp:location>metadata.xml</adlcp:location>
+      </metadata>
+      
+      <imsss:sequencing>
+        <imsss:controlMode choice="true" flow="true"/>
+      </imsss:sequencing>
+    </organization>
+  </organizations>
+  
+  <resources>
+    <metadata>
+      <schema>ADL SCORM</schema>
+      <schemaversion>2004 4th Edition</schemaversion>
+      <adlcp:location>metadata.xml</adlcp:location>
+    </metadata>
+  
+  <!-- Module 1 -->
+    <resource identifier="resource_00" type="webcontent" href="index.html" adlcp:scormType="sco">
+      <metadata>
+        <schema>ADL SCORM</schema>
+        <schemaversion>2004 4th Edition</schemaversion>
+        <adlcp:location>metadata.xml</adlcp:location>
+      </metadata>
+      <file href="images/bird.png"/>
+      <file href="index.html"/>
+      <file href="index-2.html"/>
+
+      <!-- REF TO COMMON FILES -->
+      <dependency identifierref="common_files"/>
+    </resource>
+    
+    <!-- Module 2 -->
+    <resource identifier="resource_01" type="webcontent" href="index-3.html" adlcp:scormType="sco">
+      <metadata>
+        <schema>ADL SCORM</schema>
+        <schemaversion>2004 4th Edition</schemaversion>
+        <adlcp:location>metadata.xml</adlcp:location>
+      </metadata>
+      <file href="images/bird.png"/>
+      <file href="index-3.html"/>
+
+      <!-- REF TO COMMON FILES -->
+      <dependency identifierref="common_files"/>
+    </resource>
+  
+  <!-- COMMON FILES -->
+    <resource identifier="common_files" type="webcontent" adlcp:scormType="asset">
+      <file href="shared/assessmenttemplate.html"/>
+      <file href="shared/background.jpg"/>
+      <file href="shared/cclicense.png"/>
+      <file href="shared/contentfunctions.js"/>
+      <file href="shared/launchpage.html"/>
+      <file href="shared/scormfunctions.js"/>
+      <file href="shared/style.css"/>
+      <file href="shared/jquery-ui.css"/>
+    </resource>
+
+  </resources>
+
+    <imsss:sequencingCollection>
+
+    <imsss:sequencing ID="content_seq_rules">
+  
+      <imsss:rollupRules rollupObjectiveSatisfied="false" rollupProgressCompletion="false" objectiveMeasureWeight="0"></imsss:rollupRules>
+
+      <imsss:deliveryControls completionSetByContent="true" objectiveSetByContent="true"/>
+
+    </imsss:sequencing>
+  </imsss:sequencingCollection>
+
+</manifest>
