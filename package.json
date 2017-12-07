@@ -1,0 +1,31 @@
+{
+  "name": "scorm-exporter",
+  "version": "1.0.0",
+  "description": "SCORM animation exporter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dotify/scorm-exporter.git"
+  },
+  "keywords": [
+    "scorm",
+    "export",
+    "360learning",
+    "lms"
+  ],
+  "author": "Dotify",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/dotify/scorm-exporter/issues"
+  },
+  "homepage": "https://github.com/dotify/scorm-exporter#readme",
+  "dependencies": {
+    "mkdirp": "^0.5.1",
+    "ncp": "^2.0.0",
+    "pad-left": "^2.1.0",
+    "uuid": "^3.1.0"
+  }
+}
